@@ -13,6 +13,8 @@ class ViewController: UIViewController
     
     @IBOutlet weak var textView: UITextView!
     
+    var output = ""
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -20,11 +22,41 @@ class ViewController: UIViewController
     }
 
     
+    @IBAction func forLoop(_ sender: Any)
+    {
+        var veggies = ["carrot", "broccoil", "spinach", "celery"]
+        
+        for i in 0...3
+        {
+           output +=
+             "\(veggies[i])\n"
+        }
+        
+        textView.text = output
+    
+        print(output)
+    
+    }
+    
+    @IBAction func forCount(_ sender: Any)
+    {
+        var drinks = ["tea", "coffee", "milk", "soda"]
+        
+        for i in 0..<drinks.count
+        {
+           output += "\(drinks[i])\n"
+        }
+        
+        textView.text = output
+        
+        print(output)
+    }
+    
     @IBAction func forInLoop(_ sender: Any)
     {
         var fruit = ["apple", "pear", "strawberry", " peach"]
         
-        var output = ""
+        
         
         for item in fruit
         {
@@ -33,9 +65,15 @@ class ViewController: UIViewController
         
         textView.text = output
         
+        print(output)
         
     }
     
-
+    
+    @IBAction func dictionaryLoop(_ sender: Any)
+    {
+        
+    }
+    
 }
 
