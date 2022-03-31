@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Snn-md-hLV">
-                                <rect key="frame" x="5" y="119" width="404" height="711"/>
+                                <rect key="frame" x="5" y="119" width="404" height="665"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lots of Words" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MBo-lI-hWZ">
                                         <rect key="frame" x="0.0" y="0.0" width="404" height="200"/>
@@ -69,21 +69,25 @@
                                         <rect key="frame" x="0.0" y="542" width="404" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="doWhile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSQ-9Z-nn6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGf-HR-8DH">
                                         <rect key="frame" x="0.0" y="588" width="404" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="whileLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZN1-Ux-Lcc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4u-Qk-fY6">
                                         <rect key="frame" x="0.0" y="634" width="404" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ix-wG-ehr">
-                                        <rect key="frame" x="0.0" y="680" width="404" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="joinedLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0lb-q0-AFV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
